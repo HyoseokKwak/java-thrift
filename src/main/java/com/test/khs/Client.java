@@ -1,5 +1,6 @@
 package com.test.khs;
 
+import java.util.LinkedList;
 import java.util.List;
 
 import org.apache.thrift.TException;
@@ -27,4 +28,18 @@ public class Client {
             e.printStackTrace();
         }
     }
+    
+    public static void main(String[] args) {
+    	
+    	Client c = new Client();
+    	
+    	Item i = new Item();
+    	i.content = "hehe";
+    	i.id = 123;
+
+    	List<Item> list = new LinkedList<Item>();
+    	list.add(i);
+    	
+    	c.write(list);
+	}
 }
