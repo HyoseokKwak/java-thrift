@@ -18,8 +18,8 @@ public class Client {
             transport.open();
 
             TProtocol protocol = new TBinaryProtocol(transport);
-            CrawlingService.Client client = new CrawlingService.Client(protocol);
 
+            CrawlingService.Client client = new CrawlingService.Client(protocol);
             client.write(items);
             transport.close();
         } catch (TTransportException e) {
