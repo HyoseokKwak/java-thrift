@@ -153,7 +153,6 @@ public class Item implements org.apache.thrift.TBase<Item, Item._Fields>, java.i
     return new Item(this);
   }
 
-  @Override
   public void clear() {
     setIdIsSet(false);
     this.id = 0;
@@ -306,7 +305,6 @@ public class Item implements org.apache.thrift.TBase<Item, Item._Fields>, java.i
     return list.hashCode();
   }
 
-  @Override
   public int compareTo(Item other) {
     if (!getClass().equals(other.getClass())) {
       return getClass().getName().compareTo(other.getClass().getName());
@@ -463,7 +461,6 @@ public class Item implements org.apache.thrift.TBase<Item, Item._Fields>, java.i
 
   private static class ItemTupleScheme extends TupleScheme<Item> {
 
-    @Override
     public void write(org.apache.thrift.protocol.TProtocol prot, Item struct) throws org.apache.thrift.TException {
       TTupleProtocol oprot = (TTupleProtocol) prot;
       BitSet optionals = new BitSet();
@@ -482,7 +479,6 @@ public class Item implements org.apache.thrift.TBase<Item, Item._Fields>, java.i
       }
     }
 
-    @Override
     public void read(org.apache.thrift.protocol.TProtocol prot, Item struct) throws org.apache.thrift.TException {
       TTupleProtocol iprot = (TTupleProtocol) prot;
       BitSet incoming = iprot.readBitSet(2);

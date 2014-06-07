@@ -253,7 +253,12 @@ public class HelloService {
 
   }
 
-  public static class greeting_args implements org.apache.thrift.TBase<greeting_args, greeting_args._Fields>, java.io.Serializable, Cloneable, Comparable<greeting_args>   {
+  public static class greeting_args 
+  	implements org.apache.thrift.TBase<greeting_args, 
+		greeting_args._Fields>, 
+		java.io.Serializable, 
+		Cloneable, 
+		Comparable<greeting_args>   {
     private static final org.apache.thrift.protocol.TStruct STRUCT_DESC = new org.apache.thrift.protocol.TStruct("greeting_args");
 
     private static final org.apache.thrift.protocol.TField NAME_FIELD_DESC = new org.apache.thrift.protocol.TField("name", org.apache.thrift.protocol.TType.STRING, (short)1);
@@ -371,7 +376,6 @@ public class HelloService {
       return new greeting_args(this);
     }
 
-    @Override
     public void clear() {
       this.name = null;
       setAgeIsSet(false);
@@ -524,7 +528,6 @@ public class HelloService {
       return list.hashCode();
     }
 
-    @Override
     public int compareTo(greeting_args other) {
       if (!getClass().equals(other.getClass())) {
         return getClass().getName().compareTo(other.getClass().getName());
@@ -681,7 +684,6 @@ public class HelloService {
 
     private static class greeting_argsTupleScheme extends TupleScheme<greeting_args> {
 
-      @Override
       public void write(org.apache.thrift.protocol.TProtocol prot, greeting_args struct) throws org.apache.thrift.TException {
         TTupleProtocol oprot = (TTupleProtocol) prot;
         BitSet optionals = new BitSet();
@@ -700,7 +702,6 @@ public class HelloService {
         }
       }
 
-      @Override
       public void read(org.apache.thrift.protocol.TProtocol prot, greeting_args struct) throws org.apache.thrift.TException {
         TTupleProtocol iprot = (TTupleProtocol) prot;
         BitSet incoming = iprot.readBitSet(2);
@@ -821,7 +822,6 @@ public class HelloService {
       return new greeting_result(this);
     }
 
-    @Override
     public void clear() {
       this.success = null;
     }
@@ -922,7 +922,6 @@ public class HelloService {
       return list.hashCode();
     }
 
-    @Override
     public int compareTo(greeting_result other) {
       if (!getClass().equals(other.getClass())) {
         return getClass().getName().compareTo(other.getClass().getName());
@@ -1052,7 +1051,6 @@ public class HelloService {
 
     private static class greeting_resultTupleScheme extends TupleScheme<greeting_result> {
 
-      @Override
       public void write(org.apache.thrift.protocol.TProtocol prot, greeting_result struct) throws org.apache.thrift.TException {
         TTupleProtocol oprot = (TTupleProtocol) prot;
         BitSet optionals = new BitSet();
@@ -1065,7 +1063,6 @@ public class HelloService {
         }
       }
 
-      @Override
       public void read(org.apache.thrift.protocol.TProtocol prot, greeting_result struct) throws org.apache.thrift.TException {
         TTupleProtocol iprot = (TTupleProtocol) prot;
         BitSet incoming = iprot.readBitSet(1);

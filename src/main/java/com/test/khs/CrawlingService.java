@@ -354,7 +354,6 @@ public class CrawlingService {
       return new write_args(this);
     }
 
-    @Override
     public void clear() {
       this.items = null;
     }
@@ -470,7 +469,6 @@ public class CrawlingService {
       return list.hashCode();
     }
 
-    @Override
     public int compareTo(write_args other) {
       if (!getClass().equals(other.getClass())) {
         return getClass().getName().compareTo(other.getClass().getName());
@@ -618,7 +616,6 @@ public class CrawlingService {
 
     private static class write_argsTupleScheme extends TupleScheme<write_args> {
 
-      @Override
       public void write(org.apache.thrift.protocol.TProtocol prot, write_args struct) throws org.apache.thrift.TException {
         TTupleProtocol oprot = (TTupleProtocol) prot;
         BitSet optionals = new BitSet();
@@ -637,7 +634,6 @@ public class CrawlingService {
         }
       }
 
-      @Override
       public void read(org.apache.thrift.protocol.TProtocol prot, write_args struct) throws org.apache.thrift.TException {
         TTupleProtocol iprot = (TTupleProtocol) prot;
         BitSet incoming = iprot.readBitSet(1);
@@ -746,7 +742,6 @@ public class CrawlingService {
       return new write_result(this);
     }
 
-    @Override
     public void clear() {
     }
 
@@ -795,7 +790,6 @@ public class CrawlingService {
       return list.hashCode();
     }
 
-    @Override
     public int compareTo(write_result other) {
       if (!getClass().equals(other.getClass())) {
         return getClass().getName().compareTo(other.getClass().getName());
@@ -895,12 +889,10 @@ public class CrawlingService {
 
     private static class write_resultTupleScheme extends TupleScheme<write_result> {
 
-      @Override
       public void write(org.apache.thrift.protocol.TProtocol prot, write_result struct) throws org.apache.thrift.TException {
         TTupleProtocol oprot = (TTupleProtocol) prot;
       }
 
-      @Override
       public void read(org.apache.thrift.protocol.TProtocol prot, write_result struct) throws org.apache.thrift.TException {
         TTupleProtocol iprot = (TTupleProtocol) prot;
       }
