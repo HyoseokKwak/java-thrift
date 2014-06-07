@@ -14,7 +14,7 @@ public class Client {
     public void write(List<Item> items){
         TTransport transport;
         try {
-            transport = new TSocket("192.168.56.1", 7911);
+            transport = new TSocket("localhost", 7911);
             transport.open();
 
             TProtocol protocol = new TBinaryProtocol(transport);
